@@ -1,0 +1,39 @@
+// filepath: src/App.tsx
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import Home from './components/Home';
+import About from './components/About';
+import Projects from './components/Projects';
+import Skills from './components/Skills';
+import Experience from './components/Experience';
+import Contact from './components/Contact';
+import './index.css';
+
+const App: React.FC = () => {
+  return (
+    <Router>
+      <div className="app-container">
+        <nav className="nav-tabs">
+          <Link to="/" className="tab-link">Home</Link>
+          <Link to="/about" className="tab-link">About</Link>
+          <Link to="/projects" className="tab-link">Projects</Link>
+          <Link to="/skills" className="tab-link">Skills</Link>
+          <Link to="/experience" className="tab-link">Experience</Link>
+          <Link to="/contact" className="tab-link">Contact</Link>
+        </nav>
+        <main className="main-content">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/skills" element={<Skills />} />
+            <Route path="/experience" element={<Experience />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </main>
+      </div>
+    </Router>
+  );
+};
+
+export default App;

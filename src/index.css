@@ -1,0 +1,376 @@
+/* filepath: /C:/Users/Yordi/Documents/portfolio/project_name/src/index.css */
+
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #e0f7fa; /* Background color */
+  color: #333;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-tabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  justify-content: center;
+  width: 100%;
+  background-color: #007acc; /* Background color */
+  padding: 1rem 0;
+}
+
+.tab-link {
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: #fff;
+  background-color: #007acc;
+  border: 1px solid #007acc;
+  border-radius: 4px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.tab-link:hover {
+  background-color: #005f99;
+  transform: translateY(-2px);
+}
+
+.main-content {
+  width: 100%;
+  max-width: 1200px;
+  padding: 1rem;
+  background-color: #ffffff; /* Background color */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Home Component */
+.home-container {
+  padding: 1rem;
+  text-align: center;
+}
+
+.home-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #007acc;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+}
+
+.home-info {
+  margin-top: 1rem;
+}
+
+.home-name, .home-title {
+  opacity: 0;
+  animation: fadeInText 1s ease-in-out forwards;
+}
+
+.home-name {
+  animation-delay: 0s;
+}
+
+.home-title:nth-of-type(1) {
+  animation-delay: 1s;
+}
+
+.home-title:nth-of-type(2) {
+  animation-delay: 2s;
+}
+
+.home-section {
+  opacity: 0;
+  animation: fadeInSection 1s ease-in-out forwards;
+}
+
+.home-section:nth-of-type(1) {
+  animation-delay: 0s;
+}
+
+.home-section:nth-of-type(2) {
+  animation-delay: 3s;
+}
+
+.home-section:nth-of-type(3) {
+  animation-delay: 4s;
+}
+
+.home-section:nth-of-type(4) {
+  animation-delay: 5s;
+}
+
+.home-section:nth-of-type(5) {
+  animation-delay: 6s;
+}
+
+.home-section:nth-of-type(6) {
+  animation-delay: 7s;
+}
+
+/* Section Hover Effect */
+section {
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin-bottom: 2rem;
+}
+
+section:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* About Component */
+.about-container {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #007acc;
+  text-align: center;
+}
+
+.about-description {
+  margin-top: 0.5rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.about-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin: 1rem auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+/* Projects Component */
+.projects-container {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.projects-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #007acc;
+  text-align: center;
+}
+
+.projects-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.project-item {
+  margin-bottom: 1rem;
+}
+
+.project-item h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #005f99;
+}
+
+.project-item p {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+.project-item ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+.project-item ul li {
+  margin-bottom: 0.5rem;
+}
+
+.project-item p strong {
+  display: block;
+  margin-top: 0.5rem;
+}
+
+/* Skills Component */
+.skills-container {
+  padding: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skills-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #007acc;
+}
+
+.skills-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem 1rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.skill-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.skill-icon {
+  margin-right: 0.5rem;
+  font-size: 2rem;
+  color: #007acc;
+}
+
+/* Experience Component */
+.experience-container {
+  padding: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.experience-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #007acc;
+}
+
+.experience-item {
+  margin-bottom: 1.5rem;
+}
+
+.experience-item h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #005f99;
+}
+
+.experience-item p {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+.experience-item ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+.experience-item ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Contact Component */
+.contact-container {
+  padding: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.contact-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #007acc;
+}
+
+.contact-info {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.contact-info p {
+  margin: 0.5rem 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInText {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInSection {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
